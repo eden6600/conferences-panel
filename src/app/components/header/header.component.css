@@ -1,3 +1,14 @@
+mat-toolbar {
+  background-color: #ff6f00;
+}
+
 mat-toolbar-row {
   justify-content: space-between;
+}
+
+button {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  right: 18px;
 }

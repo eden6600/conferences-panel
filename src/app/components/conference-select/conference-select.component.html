@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-form-field class="text-white">
+      <mat-select [(value)]="appService.selectedConference">
+        <mat-option value="default">בחר כנס מתוך הרשימה</mat-option>
+        <mat-option
+          *ngFor="let conference of appService.conferences"
+          [value]="conference"
+        >
+          {{ conference }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-toolbar-row>
+</mat-toolbar>

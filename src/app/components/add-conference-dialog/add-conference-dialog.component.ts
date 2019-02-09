@@ -18,6 +18,6 @@ export class AddConferenceDialogComponent implements OnInit {
 
   onClick() {
     this.dialogRef.close();
-    this.appService.onSubmit();
+    this.appService.onSubmitNewConference();
   }
 }
