@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>הוסף כנס חדש</h1>
+
+<form [formGroup]="appService.addConferenceForm">
+  <mat-form-field>
+    <input matInput placeholder="שם הכנס" formControlName="name" />
+  </mat-form-field>
+
+  <mat-radio-group formControlName="type">
+    <mat-radio-button value="1">
+      עסקי
+    </mat-radio-button>
+    <mat-radio-button value="2">
+      פרטי
+    </mat-radio-button>
+  </mat-radio-group>
+
+  <div class="submit-container">
+    <button mat-flat-button color="accent" type="button" (click)="onClick()">
+      אישור
+    </button>
+  </div>
+</form>
