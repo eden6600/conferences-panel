@@ -1,1 +1,12 @@
-<mat-card></mat-card>
+<mat-card>
+
+<div *ngFor="let conference of appService.conferencesData">
+  {{conference.FirstName}}
+</div>
+
+  <div *ngIf="appService.conferencesData.length == 0">
+    asdasdasdads
+  </div>
+
+
+</mat-card>
